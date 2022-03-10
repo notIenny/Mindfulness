@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bubble Wrap</title>
+    <link rel="icon" href="images/m_icon.png">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h2>Bop n' Pop</h2>
+    <i class="fas fa-paint-roller" onclick="bgChange()"></i>
+</header>
+
+<div id="sheet">
+</div>
+
+<div id="gameSettings"><!--
+    <i class="fas fa-clock"></i>
+    <select id="timeAmount">
+        <option value="s30" selected>30s</option>
+        <option value="s45">45s</option>
+        <option value="s60">60s</option>
+    </select>-->
+    
+</div>
+
+<div class="counters">
+    <h1><span id="time">0:30</span></h1>
+    <h4><a id="clicks">0</a> popped</h4>
+</div>
+
+<audio id="pop" src="audio/pop.mp3"></audio>
+<audio id="paint" src="audio/paint.mp3"></audio>
+<audio id="jingle" src="audio/jingle.mp3" onended="resetBub()"></audio>
+
+</body>
+<script src="./js/main.js"></script>
+</html>
